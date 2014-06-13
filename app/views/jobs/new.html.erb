@@ -1,0 +1,11 @@
+<%= form_for @job do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, required: true %><br>
+
+  <%= f.label :description %>
+  <%= f.text_area :description, required: true %><br>
+
+  <%= f.collection_select(:company_id, @companies, :id, :name) %>
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,9 @@
+
+
+<%= @job.title %>
+<%= @job.company.location %>
+<%= @job.company.name %>
+<%= @job.description %>
+
+<%= link_to "home", jobs_path %>
+<%= link_to @job.company.name, company_path(@job.company)%>

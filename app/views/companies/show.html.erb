@@ -1,0 +1,7 @@
+
+<%= @company.name %>
+<%= @company.description %>
+<% @company.jobs.each do |job| %>
+<%= link_to job.title, job_path(job) %>
+<%end%>
+

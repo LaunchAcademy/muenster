@@ -1,0 +1,6 @@
+<ul>
+  <% @jobs.each do |j| %>
+    <li><%= j.title %> - <%= j.company.name %>, <%= j.company.location%></li>
+    <%= link_to "show", job_path(j) %>
+  <% end %>
+</ul>

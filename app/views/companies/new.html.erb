@@ -1,0 +1,18 @@
+<%= form_for @company do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name, required: true %><br>
+
+  <%= f.label :description %>:
+  <%= f.text_area :description %><br>
+
+  <%= f.label :industry %>:
+  <%= f.text_field :industry %><br>
+
+  <%= f.label :website %>:
+  <%= f.text_field :website %><br>
+
+  <%= f.label :location %>:
+  <%= f.text_field :location %><br>
+
+  <%= f.submit %>
+<% end %>
