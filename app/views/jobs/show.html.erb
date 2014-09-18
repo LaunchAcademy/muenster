@@ -1,0 +1,10 @@
+<h1><%= @job.title %></h1>
+
+<p id="company"><%= @job.company.name %>, <%= @job.company.location %></p>
+
+<p id="description"><%= @job.description %></p>
+
+<p id="created">First posted on <%= @job.created_at %></p>
+<p id="updated">Last updated on <%= @job.updated_at %></p>
+
+<p><%= link_to "View All Jobs", jobs_path %></p>
