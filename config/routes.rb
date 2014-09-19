@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :jobs, only: [:index, :show, :new, :create]
+  resources :jobs, only: [:index, :show, :new, :create, :edit, :update]
 
   resources :companies, only: [:index, :show, :new, :create, :edit, :update]
 
