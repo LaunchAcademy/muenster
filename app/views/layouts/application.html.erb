@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<div id="search">
+  <%= form_tag search_jobs_path, method: :get do %>
+    <%= text_field_tag :query, params[:query], placeholder: "Search jobs" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
 <p id="notice"><%= notice %></p>
 
 <%= yield %>

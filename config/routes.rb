@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :jobs
+  resources :jobs do
+    get "search", on: :collection
+  end
 
   resources :companies, only: [:index, :show, :new, :create, :edit, :update]
 

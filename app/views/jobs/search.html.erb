@@ -1,0 +1,11 @@
+<h1>Search Results</h1>
+
+<p><%= @jobs.count %> job(s) found for "<%= params[:query] %>"</p>
+
+<ul>
+  <% @jobs.each do |job| %>
+    <li><%= link_to job.title, job_path(job) %> - <%= job.company.name %>, <%= job.company.location %></li>
+  <% end %>
+</ul>
+
+<p><%= link_to "View All Jobs", jobs_path %></p>
