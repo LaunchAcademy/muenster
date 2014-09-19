@@ -8,4 +8,5 @@
 <p id="updated">Last updated on <%= @job.updated_at %></p>
 
 <p><%= link_to "Edit Job", edit_job_path(@job) %></p>
+<p><%= link_to "Remove Job", job_path(@job), method: :delete %></p>
 <p><%= link_to "View All Jobs", jobs_path %></p>
