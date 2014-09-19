@@ -5,3 +5,5 @@
     <li><%= link_to job.title, job_path(job) %> - <%= job.company.name %>, <%= job.company.location %></li>
   <% end %>
 </ul>
+
+<p><%= link_to "Add Job", new_job_path %></p>
